@@ -1,0 +1,264 @@
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos Gerais */
+body {
+    z-index:initial;
+    font-family: Garamond, Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+/* Header e Navegação */
+header {
+    
+    background: #333;
+    color: #fff;
+    padding: 1px 0;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+}
+
+    nav a {
+        color: #fff;
+        text-decoration: none;
+        padding: 10px;
+    }
+
+        nav a:hover {
+            background: #575757;
+        }
+
+/* Contêiner Principal */
+ .main-container {
+    background-image: url(Foto.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    color: white;
+    padding: 30px 20px;
+    border: 1px solid;
+    height: 500px;
+    width: 100%;
+    max-height: 1000;
+    position: relative;
+    margin: 0 auto;
+}
+
+/* Estilo para div principal*/
+div{
+    background-image: url(Foto.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 30px 20px;
+    z-index:initial;
+    border: 1px solid;
+    height: 500px;
+    width: 100%;
+}
+
+/* Estilo para imagens */
+img {
+    height: 80px;
+    width: 80px;
+    margin-top: 10px;
+    float: left;
+}
+
+/* Links */
+a  {
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none; /* Remove o sublinhado */
+}
+
+    a:hover {
+        text-decoration: underline;
+    }
+/* Títulos */
+h1 {
+    padding: 30px 20px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+    max-width:1000;
+    max-height:1000;
+    text-align: center; /* Centraliza o texto */
+}
+
+h2 {
+    
+    font-family: Garamond;
+    text-align: center;
+    background-color: blueviolet;
+    color: white;
+    border: 1px solid;
+    padding: 15px;
+    font-size: 1.5rem;
+}
+
+.h3 {
+
+    text-align:left;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 5px 0; /* Substitui padding */
+}
+/* Seções */
+article{
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: left;
+    background-color: rgb(124, 120, 172);
+    color: white;
+    border: 2px solid;
+    padding: 10px;
+    margin-bottom: 20px; /* Adicionado espaçamento */
+}
+
+section {
+    
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    background-color: white;
+    color: black;
+    border: 2px solid;
+    padding: 50px;
+    margin-bottom: 20px; /* Adicionado espaçamento */
+}
+
+
+/* Estilos para iframes */
+iframe {
+    border: none; /* Remove borda padrão */
+    margin-top: 10px; /* Adiciona espaçamento */
+    width: 200px;
+    height: 200px;
+
+}
+
+/* Botões */
+.button {
+    font-family: Garamond;
+    text-align: center;
+    background-color: white;
+    color: white;
+    border: 1px solid;
+    font-size: 18px; /* Tamanho ajustado */
+    font-weight: bold;
+    padding: 10px 15px;
+    cursor: pointer; /* Adiciona cursor interativo */
+}
+
+button:hover {
+    background-color: white; /* Efeito ao passar o mouse */
+    color: white;
+}
+
+/* Formulários */
+form {
+    font-family: Garamond;
+    text-align: left;
+    background-color: white;
+    color: white;
+    border: 1px solid;
+    padding: 20px;
+    border-radius: 5px;
+    flex-direction: column;
+    gap: 10px;
+    display: block;
+   
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+input[type="submit"] {
+    background: blueviolet;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+    input[type="submit"]:hover {
+        background: white;
+        color: blueviolet;
+    }
+
+
+
+/* Parágrafos estilizados */
+footer {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    background-color: blueviolet;
+    color: white;
+    padding: 10px;
+    margin-top:20px;
+}
+
+/* Responsividade */
+@media (max-width: 1200px) {
+    .main-container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    nav a {
+        margin: 5px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .main-container {
+        padding: 20px 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    .button, input[type="submit"] {
+        padding: 10px;
+        font-size: 16px;
+    }
+}
+    
